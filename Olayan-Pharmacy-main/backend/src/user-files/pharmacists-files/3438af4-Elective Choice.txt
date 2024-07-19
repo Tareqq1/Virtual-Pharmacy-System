@@ -1,0 +1,9 @@
+Knowledge Representation And Reasoning : 9
+Image Processing : ???
+Cloud Computing (ISM) : 1
+Advanced Data structures and Algorithms : 8
+Architecture of Massively Scalable Apps 5
+Deep Learning in Computer Vision : 4
+Natural Language Processing and Information Retrieval : 7
+Introduction to Quantum Technologies & Computing : 6
+Computer Animation : Dr. Rimon Elias?

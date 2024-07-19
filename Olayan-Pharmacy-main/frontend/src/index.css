@@ -1,0 +1,449 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 100%;
+  margin: 6% auto;
+}
+
+/* homepage */
+
+
+
+.home {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu footer footer footer footer footer';
+  gap: 20px;
+  padding: 10px;
+}
+.home-main {
+  grid-area: main;
+}
+.home-header {
+  grid-area: header;
+}
+.profile-header{
+  grid-area: header;
+  background: #fff;
+  border-radius: 4px;
+  margin: 2% auto;
+  padding: 5px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  width: 90%;
+  transform: translate(10vh, 0);
+}
+.profile-main {
+  grid-area: main;
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+.pofile-right {
+  grid-area: right;
+}
+.user-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.user-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.user-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.user-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+.user-details img {
+  height:50px;
+  width:auto;/*maintain aspect ratio*/
+  max-width:50px;
+}
+
+/* new form */
+.user-form {
+  background: #fff;
+  height: fit-content;
+  padding: 10px;
+  width: 90%;
+  grid-area: right;
+  border-radius: 10px;
+}
+.user-form label, input {
+  display: block;
+}
+.user-form  input {
+  padding: 10px;
+  margin-top: 10px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.user-form form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form-shop-item {
+  background:  linear-gradient(0deg, #cfd9df   0%, #e2ebf0 100%);
+  height: fit-content;
+  padding: 10px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.user-form-shop-item button {
+  margin: auto 2px;
+  padding: 10px;
+}
+
+.alt-text {
+  cursor: pointer;
+}
+
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* Special Text */
+.special-text {
+  margin: 0 0 10px 0;
+  font-size: 1rgb(188, 170, 7);
+  color: var(--primary);
+  background: linear-gradient(0deg, #fece00 0%, #ffe172 100%);
+  border-radius: 4px;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* navbar */
+.navbar {
+  background: #fff;
+}
+.navbar .container {
+  position: fixed;
+  grid-area: header;
+  top: 0;
+  left: 0;
+  width: 150%;
+  z-index: 100;
+  background-image: linear-gradient(0deg, #fece00 0%, #ffe172 100%);
+  text-align: center;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.navbar a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a, nav button {
+  margin-left: 10px;
+}
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+nav button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Header */
+#header {
+  grid-area: menu;
+  position: fixed;
+  translate: -10px;
+  z-index: 100;
+  
+}
+#header .pro-sidebar {
+  height: 87vh;
+}
+
+#header .closemenu {
+  color: #000;
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  line-height: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 18px;
+  top: 55px;
+  cursor: pointer;
+}
+
+
+
+.hyperlink {
+  color: #000;
+  translate: 0 -10px;
+  margin-left: 10px;
+}
+
+.sub {
+  margin-left: 1px;
+  border: 1px solid white;
+  background-color: white;
+  /* change this to "white" or just delete it*/
+}
+
+
+
+.entireMenu {
+  background-color: rgb(173, 255, 215);
+}
+
+
+#header .pro-sidebar {
+  width: 100%;
+  min-width: 100%;
+}
+
+#header .pro-sidebar.collapsed {
+  width: 80px;
+  min-width: 80px;
+}
+
+#header .pro-sidebar-inner {
+  background-color: white;
+  box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout {
+  overflow-y: hidden;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+  font-size: 20px;
+  padding: 0 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+#header .logotext {
+  text-align: center;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul {
+  padding: 0 5px;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+  color: #000;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+  background-color: #fbf4cd;
+  color: #000;
+  border-radius: 3px;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper .pro-item-content {
+  color: #000000;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout .active {
+  background-image: linear-gradient(0deg, #fece00 0%, #ffe172 100%);
+}
+
+#header .logo {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 720px) {
+  html {
+      overflow: hidden;
+  }
+}
+/* End Header */
+
+/* Login */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.loginForm {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 400px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.loginForm input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.loginForm button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.loginForm button:hover,.loginForm button:active,.loginForm button:focus {
+  background: #43A047;
+}
+.loginForm .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.loginForm .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.loginForm .register-form {
+  display: none;
+}
+.loginContainer {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.loginContainer:before, .loginContainer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.loginContainer .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.loginContainer .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.loginContainer .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.loginContainer .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.loginContainer .info span .fa {
+  color: #EF3B3A;
+}
+.loginBody {
+  background: #76b852; /* fallback for old browsers */
+  background: rgb(141,194,111);
+  background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+/* END LOGIN */
+
+
